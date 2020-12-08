@@ -1,10 +1,10 @@
 .about {
+    padding-top: 20px;
 
     &__part {
-        padding: 30px 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 400px 300px;
+        grid-template-rows: auto auto;/* 400px 300px; */
     }
 
     
@@ -27,6 +27,8 @@
     }
 
      @media screen and (min-width: 800px) {
+        
+
         &__part {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 350px;
@@ -63,6 +65,8 @@
             border-bottom-left-radius: 50%;
         }
     } 
+
+   
 
     &__certifications-list {
         padding: 20px 0;

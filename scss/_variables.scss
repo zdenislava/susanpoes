@@ -1,0 +1,14 @@
+$content-bcg-color: #E0E0E0;
+$text-shadow: 1px 1px 5px rgb(107, 107, 107);
+
+
+@mixin bcg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@mixin text-center {
+    text-align: center;
+}

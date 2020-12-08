@@ -1,0 +1,140 @@
+ 
+
+    .header {
+    height: 300px;
+    background-image: url(../images/banner/banner-600.jpg);
+    @include bcg-img;
+    text-align: center;
+
+
+    &__title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: $text-shadow;
+    }
+
+    &__link-title {
+        align-self: center;
+    }
+
+    &__slogan {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        text-shadow: $text-shadow;
+        margin-bottom: 10px;
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__menu-item-link {
+        color: #000;
+        
+    }
+
+
+    &__menu-item {
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-bottom-color: black;
+        }
+       }
+
+       &__menu-item--active {
+           border-bottom: 1px solid #000;
+       }
+
+    @media screen and (min-width: 480px) {
+        height: 600px;
+        background-image: url(../images/banner/banner-1900.jpg);
+
+        &__wrapper {
+            margin-bottom: 200px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__menu-item-link {
+            display: block;
+            padding: 020px;
+        }
+
+        &__title {
+            padding-left: 20px;
+        }
+
+       &__slogan {
+        font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 800px;
+
+        &__wrapper {
+            margin-bottom: 300px;
+        }
+    }
+
+    @media screen and (min-width: 1700px) {
+        height: 1000px;
+
+        &__wrapper {
+            margin-bottom: 400px;
+        }
+    }
+
+    @media screen and (min-width: 2100px) {
+        height: 1300px;
+        background-image: url(../images/banner/banner-2400.jpg);
+
+        &__wrapper {
+            margin-bottom: 500px;
+        }
+    } 
+}
+ 
+/* header u ostatních stránek */        
+
+.main-header {
+    background-image: url(../images/banner/banner-600.jpg);
+    @include bcg-img;
+    background-position: top;
+    border-bottom: 1px solid #000;
+    
+    &__wrapper {
+        padding: 20px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__wrapper {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+   
+}
+        
+
+
+
+
+
+
+
+
+
+

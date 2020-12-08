@@ -1,0 +1,72 @@
+.main {
+    &__section {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+   
+    
+    &__collection-descr {
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+
+    &__collection-phone {
+        height: 300px;
+        @include bcg-img;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: $text-shadow;
+    }
+
+    &__shop-link {
+        color: #000;
+        border-bottom: 1px solid black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-shadow: $text-shadow;
+        }
+    }
+
+    .first {
+        background-image: url(/images/W2021/bluecoat-w500px.jpg);
+    }
+
+    .second,
+    .third {
+        display: none;
+    }
+        
+    @media screen and (min-width: 480px) {
+        &__collection-phone-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+       .second {
+            display: flex;
+            background-image: url(/images/W2021/greysweater.jpg);
+        } 
+        .third {
+            display: flex;
+            background-image: url(/images/W2021/browncoat.jpg);
+        }
+
+        &__collection-phone {
+            height: 500px;
+            flex: 1 1 calc((100% / 3));
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+       
+    }
+}
+

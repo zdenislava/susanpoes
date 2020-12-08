@@ -1,0 +1,44 @@
+---
+layout: layouts/main-layout
+menu: eshop
+---
+    
+    <main class="">
+        <section class="eshop u-content u-margin-auto u-content-color">
+
+          <h2 class="">E-shop</h2>
+          
+          <div class="eshop__collection">
+            <p>Chceš si prohlédnout některou kolekci specificky?</p>
+            <ul class="eshop__collection-list">
+              <a class="eshop__collection-link" href="#"><li class="eshop__collection-item">W20/21</li></a>
+              <li class="eshop__collection-item--inactive eshop__collection-item ">SS19/20</li>
+            </ul>
+          </div>
+          
+
+          <div class="eshop__products">
+
+            {% for produkt in produkty %}
+
+              <div class="eshop__product">
+              <div class="eshop__photo">
+                <a class="eshop__photo-link" href="/eshop/{{ produkt.odkaz }}"><img class="eshop__photo-img" src="/images/{{ produkt.foto }}" alt="{{ produkt.nazev }}"></a>
+              </div>
+              <div class="eshop__detail">
+                  <a class="eshop__detail-link" href="/eshop/{{ produkt.odkaz }}"><h3>{{ produkt.nazev }}</h3></a>
+                  <p>{{ produkt.cena }}</p>                  
+              </div>
+              </div>
+
+            {% endfor %}
+
+            
+              
+            
+          </div>
+
+
+        </section>
+      </main>
+  

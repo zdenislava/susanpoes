@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Susan Poes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/lightbox.min.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper u-content u-margin-auto u-margin-bottom">
+        <a class="header__link-title" href="/index.html">
+          <h1 class="header__title">Susan Poes</h1></a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <a class="header__menu-item-link" href="/kolekce"
+              ><li class="header__menu-item {% if menu === "kolekce" %}header__menu-item--active{% endif %}">
+                Kolekce
+              </li></a
+            >
+            <a class="header__menu-item-link" href="/eshop"
+              ><li class="header__menu-item {% if menu === "eshop" %}header__menu-item--active{% endif %}">E-shop</li></a
+            >
+            <a class="header__menu-item-link " href="/omne"
+              ><li class="header__menu-item {% if menu === "omne" %}header__menu-item--active{% endif %}">O mně</li></a
+            >
+            <a class="header__menu-item-link" href="/kontakt"
+              ><li class="header__menu-item {% if menu === "kontakt" %}header__menu-item--active{% endif %}">Kontakt</li></a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>

@@ -1,0 +1,191 @@
+---
+layout: layouts/main-layout
+menu: eshop
+---
+    <main>
+      <section class="form u-content u-margin-auto u-content-color">
+        <ul class="breadcrumb">
+          <a class="breadcrumb__link" href="/eshop"
+            ><li class="breadcrumb__item">E-shop</li></a
+          >
+          <li>&gt;</li>
+          <a class="breadcrumb__link" href="/eshop/hnedy-kabat-lola/"
+            ><li class="breadcrumb__item">Produkt - Modrý kabát</li></a
+          >
+          <li>&gt;</li>
+          <a class="breadcrumb__link" href="/objednavka/hnedy-kabat-lola/"
+            ><li class="breadcrumb__item">Objednávka - Hnědý kabát</li></a
+          >
+        </ul>
+
+        <h2>Vaše objednávka</h2>
+
+        <form
+          class="form__order"
+          method="post"
+          action="https://submit-form.com/JJj9za1S"
+        >
+          <div class="form__field">
+            <label for="produkt">Produkt</label>
+            <input
+              type="text"
+              name="produkt"
+              id="produkt"
+              readonly
+              value="Hnědý kabát LOLA"
+            />
+            <label for="cena">Cena</label>
+            <input
+              type="text"
+              name="cena"
+              id="cena"
+              readonly
+              value="3 000 Kč"
+            />
+          </div>
+          <div class="form__field">
+            <label for="velikost"
+              >Velikost <span class="required">*</span></label
+            >
+            <select name="velikost" id="velikost" required>
+              <option value="34/36">34/36</option>
+              <option value="38">38</option>
+              <option value="40/42">40/42</option>
+              <option value="44">44</option>
+              <option value="46/48">46/48</option>
+            </select>
+          </div>
+          <h3 class="form__part-title">Osobní údaje</h3>
+          <div class="form__field">
+            <label for="jmeno">Jméno<span class="required">*</span></label>
+            <input type="text" name="jmeno" required />
+          </div>
+
+          <div class="form__field">
+            <label for="prijmeni"
+              >Příjmení<span class="required">*</span></label
+            >
+            <input type="text" name="prijmeni" id="prijmeni" required />
+          </div>
+
+          <div class="form__field">
+            <label for="telefon">Telefonní číslo</label>
+            <input type="number" name="telefon" id="telefon" min="9" max="20" />
+          </div>
+
+          <div class="form__field">
+            <label for="email">E-mail<span class="required">*</span></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <h3 class="form__part-title">Doručovací adresa</h3>
+
+          <div class="form__field">
+            <label for="ulice">Ulice<span class="required">*</span></label>
+            <input type="text" name="ulice" id="ulice" required />
+          </div>
+
+          <div class="form__field">
+            <label for="mesto">Město<span class="required">*</span></label>
+            <input type="text" name="mesto" id="mesto" required />
+          </div>
+          <div class="form__field">
+            <label for="psc">PSČ<span class="required">*</span></label>
+            <input type="number" name="psc" id="psc" required />
+          </div>
+
+          <h3 class="form__part-title">Způsob doručení</h3>
+
+          <div class="form__radio">
+            <div class="form__radio-item">
+              <div class="form__radio-check">
+                <input
+                  type="radio"
+                  name="doruceni"
+                  id="osobni"
+                  value="osobni zdarma"
+                />
+                <label for="osobni">Osobní odběr</label>
+              </div>
+
+              <div class="form__radio-info"><p>Zdarma</p></div>
+            </div>
+
+            <div class="form__radio-item">
+              <div class="form__radio-check">
+                <input type="radio" name="doruceni" id="ppl" value="ppl" />
+                <label for="ppl 150kc">PPL</label>
+              </div>
+
+              <div class="form__radio-info"><p>150 Kč</p></div>
+            </div>
+
+            <div class="form__radio-item">
+              <div class="form__radio-check">
+                <input type="radio" name="doruceni" id="posta" value="posta 99kc" />
+                <label for="posta">Česká pošta</label>
+              </div>
+              <div class="form__radio-info"><p>99 Kč</p></div>
+            </div>
+          </div>
+
+          <h3 class="form__part-title">Způsob platby</h3>
+
+          <div class="form__radio">
+            <div class="form__radio-item">
+              <div class="form__radio-check">
+                <div class="form__radio-check">
+                  <input
+                    type="radio"
+                    name="placeni"
+                    id="hotove"
+                    value="hotove zdarma"
+                  />
+                  <label for="hotove">Hotově</label>
+                </div>
+              </div>
+
+              <div class="form__radio-info"><p>Zdarma</p></div>
+            </div>
+
+            <div class="form__radio-item">
+              <div class="form__radio-check">
+                <input type="radio" name="placeni" id="prevod" value="prevod zdarma" />
+                <label for="prevod">Převodem</label>
+              </div>
+              <div class="form__radio-info"><p>Zdarma</p></div>
+            </div>
+          </div>
+          <div class="form__radio-item">
+            <div class="form__radio-check">
+              <input type="radio" name="placeni" id="dobirka" value="dobirka 47kc" />
+              <label for="online">Na dobírku</label>
+            </div>
+
+            <div class="form__radio-info"><p>47 Kč</p></div>
+          </div>
+          <div class="form__field form__field--margin">
+            <label for="poznamky">Poznámky</label>
+            <textarea
+              class="form__textarea"
+              name="poznamky"
+              id="poznamky"
+              cols="30"
+              rows="10"
+              placeholder="Chcete trošku specificky užší rukávy? Nebo přidat výšivku s Vaším jménem? Toto je místo pro Vaše specifické požadavky či přání."
+            ></textarea>
+          </div>
+
+          <div class="form__checkbox">
+            <input type="checkbox" name="souhlas" id="souhlas" required />
+            <label for="souhlas">Souhlasím s obchodními podmínkami</label>
+          </div>
+
+          <input type="hidden" name="_redirect" value="/potvrzeni" />
+
+          <div class="form__button">
+            <button class="btn" type="submit" name="tlacitko">Objednat</button>
+          </div>
+        </form>
+      </section>
+    </main>

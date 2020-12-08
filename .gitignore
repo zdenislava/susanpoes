@@ -1,0 +1,4 @@
+node_modules/
+package-lock.json
+# výstupní složka 11ty
+_site/

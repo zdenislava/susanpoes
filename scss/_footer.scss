@@ -1,0 +1,42 @@
+.footer {
+    text-align: center;
+    padding: 20px 0 0 0;
+   
+
+    &__contact-wrapper {
+        height: 100%;
+        padding: 20px 0; 
+    }
+
+    &__title {
+        font-size: medium;
+    }
+
+    &__item {
+        margin: 10px 0;
+    }
+
+    &__icon {
+        margin: 0 10px;
+    }
+
+    &__copyright {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        font-size: small;
+    }
+
+    @media screen and (min-width: 480px) {
+        &__items-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__footer-item {
+            flex: 1 1 calc(100% / 3);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "nazev": "Modrý kabát ANJA",
+        "cena": "3 500 Kč",
+        "foto": "W2021/bluecoat.jpg",
+        "odkaz": "modry-kabat-anja/"
+    },
+    {
+        "nazev": "Hnědý kabát LOLA",
+        "cena": "3 000 Kč",
+        "foto": "W2021/browncoat.jpg",
+        "odkaz": "hnedy-kabat-lola/"
+    },
+    {
+        "nazev": "Šedý set BIRKE",
+        "cena": "3 000 Kč",
+        "foto": "W2021/greysweater.jpg",
+        "odkaz": "sedy-set-birke/"
+    },
+    {
+        "nazev": "Zimní čepice WEZ",
+        "cena": "1 000 Kč",
+        "foto": "W2021/winterhat.jpg",
+        "odkaz": "bila-cepice-wez/"
+    },
+    {
+        "nazev": "Set RUE",
+        "cena": "2 500 Kč",
+        "foto": "SS20/ss1.jpg",
+        "odkaz": "set-rue/"
+    }
+]

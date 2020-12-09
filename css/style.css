@@ -37,7 +37,6 @@ a {
 
 .u-content-color {
   background-color: #e0e0e0;
-  /* padding: 20px 30px; */
 }
 
 .u-margin-auto {
@@ -70,6 +69,10 @@ a {
 
 .required {
   color: #db2424;
+}
+
+.contact-padding {
+  padding-bottom: 10px;
 }
 
 .header {
